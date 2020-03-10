@@ -56,7 +56,7 @@ int main(int argc, char **argv)
 	unsigned int i = 0;
 	char *read = (char *)malloc(sizeof(char) * (READ_LENGTH + 1));
 	char *qual = (char *)malloc(sizeof(char) * (READ_LENGTH + 1));
-	memset(qual, 'F', sizeof(char) * (READ_LENGTH + 1));
+	memset(qual, 'F', sizeof(char) * (READ_LENGTH));
 	unsigned long reads = 0;
 	unsigned long total_length = 0;
 	while((l=kseq_read(p)) >= 0){
